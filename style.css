@@ -1,0 +1,221 @@
+@import url("https://fonts.cdnfonts.com/css/phat-otto");
+@import url("https://fonts.cdnfonts.com/css/quiska");
+@import url("https://fonts.cdnfonts.com/css/roundslabserif");
+@import url("https://fonts.cdnfonts.com/css/scope-one");
+/* 
+font-family: 'Phat Otto', sans-serif;
+font-family: 'Quiska', sans-serif;
+font-family: 'RoundslabSerif', sans-serif;                                                  
+font-family: 'Scope One', sans-serif;;
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+body {
+  background-color: #252525;
+}
+
+.continer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Crimson Pro", sans-serif;
+  line-height: 1.9;
+}
+
+/* ----------------Font - Size & Color--------------------- */
+
+.products_parent,
+.social_heading,
+.apps_header {
+  font-size: 16px;
+  /* text-align: center; */
+  color: azure;
+  font-family: "Crimson Pro", sans-serif;
+}
+
+/* ----------------Social--------------------- */
+.social .header {
+  display: flex;
+  align-items: center;
+  line-height: 1.9;
+}
+.social_media {
+  margin-left: 5px;
+}
+
+.social_media_one a,
+.social_media_two a {
+  margin-left: 5px;
+  color: aliceblue;
+  font-size: 20px;
+}
+.social_media_two {
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+.social .header a {
+  width: 32px;
+  height: 32px;
+  border-radius: 15%;
+  background-color: rgb(56, 55, 55);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.social .header h1 {
+  /* font-family: "Phat Otto", sans-serif; */
+  font-family: "Quiska", sans-serif;
+  /* font-family: "RoundslabSerif", sans-serif; */
+  /* font-family: "Scope One", sans-serif; */
+  color: rgb(139 136 136);
+}
+.social_heading h1 {
+  font-size: 15px;
+}
+.button {
+  margin-right: 15px;
+}
+.button-icon {
+  align-self: center;
+  color: rgb(133, 138, 138);
+}
+.social_media_icon {
+  margin-right: 10px;
+  
+}
+/* ----------------Apps--------------------- */
+
+.apps {
+  line-height: 1.9;
+  margin-right: 25px;
+}
+
+.apps_links {
+  display: flex;
+  align-items: center;
+}
+.apps_links_apple {
+  width: 130px;
+}
+.apps_links_gplay {
+  width: 165px;
+}
+.apps_header {
+  font-size: 15px;
+  font-weight: 700;
+}
+/* ----------------Products--------------------- */
+.products_parent {
+  display: flex;
+}
+
+.Products {
+  line-height: 1.9;
+  margin-right: 70px;
+}
+.Products_links a {
+  margin: auto;
+  width: 178px;
+  float: left;
+}
+/* ----------------Learn_to_trade--------------------- */
+
+.Learn_to_trade {
+  line-height: 1.9;
+  margin-right: 70px;
+}
+.Learn_to_trade a {
+  margin: auto;
+  width: 178px;
+  float: left;
+}
+/* ----------------About Us--------------------- */
+
+.about_us {
+  line-height: 1.9;
+  margin-right: 70px;
+}
+.about_us > .About_us_links {
+}
+
+/* ----------------Conditions--------------------- */
+
+.conditions {
+  line-height: 1.9;
+  margin-right: 70px;
+}
+.conditions_Links > a {
+  margin: auto;
+  width: 178px;
+  float: left;
+}
+
+/* ----------------tag a--------------------- */
+
+.About_us_links,
+.Products_links,
+.learn_to_trade_links,
+.About_us_links > a,
+.conditions_Links {
+  margin: auto;
+  width: 178px;
+  float: left;
+}
+.About_us_links > a,
+.Products_links > a,
+.learn_to_trade_links > a,
+.About_us_links > a,
+.conditions_Links > a {
+  color: antiquewhite;
+}
+/* ----------------tag h1--------------------- */
+
+.Products_header > h1,
+.learn_to_trade_header > h1,
+.About_us_header > h1,
+.conditions_header > h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ----------------footer--------------------- */
+
+.footer {
+  color: slategray;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 10px;
+  margin: 5px;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-date {
+  color: slategray;
+  padding: 10px;
+  margin: 5px;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ----------------hover--------------------- */
+
+.Products_links a:hover,
+.About_us_links a:hover,
+.learn_to_trade_links a:hover,
+.conditions_Links a:hover {
+  text-decoration: underline;
+  color: aqua;
+  transition: ease-in-out 0.3s;
+}
+
+.social_media_icon:hover{
+  color: rgb(253, 228, 117);
+  transition: ease-in 0.2s ;
+}
+.footer_parent{
+  margin-top: 100px;
+}
