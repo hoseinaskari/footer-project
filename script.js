@@ -1,3 +1,6 @@
-let a = document.getElementsByTagName("a").style.background = "#000000";
-const tag_a = document.querySelector(".footer a")
+let a = document.getElementsByTagName("a");
+const tag_a = document.querySelector(".footer")
 
+const container = document.addEventListener("click",()=>{
+    tag_a.style.color= "black"
+})
