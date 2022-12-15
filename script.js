@@ -32,7 +32,6 @@ function upDownFunc(upDown, linksList, headerList) {
     }
 }
 
-
 /* ------------------- Products --------------------- */
 products.addEventListener("click", () => {
     upDownFunc(upDown[0], linksList[0], headerList[0]);
