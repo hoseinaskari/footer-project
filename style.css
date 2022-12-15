@@ -2,6 +2,7 @@
 @import url("https://fonts.cdnfonts.com/css/quiska");
 @import url("https://fonts.cdnfonts.com/css/roundslabserif");
 @import url("https://fonts.cdnfonts.com/css/scope-one");
+@import url("https://fonts.cdnfonts.com/css/crimson-pro");
 /* 
 font-family: 'Phat Otto', sans-serif;
 font-family: 'Quiska', sans-serif;
@@ -85,7 +86,8 @@ body {
 }
 .social_media_icon {
   margin-right: 10px;
-  
+  color: aliceblue;
+  transition: color 350ms ease-in;
 }
 /* ----------------Apps--------------------- */
 
@@ -122,6 +124,7 @@ body {
   width: 178px;
   float: left;
 }
+
 /* ----------------Learn_to_trade--------------------- */
 
 .Learn_to_trade {
@@ -170,7 +173,8 @@ body {
 .learn_to_trade_links > a,
 .About_us_links > a,
 .conditions_Links > a {
-  color: antiquewhite;
+  color: rgb(223, 223, 223);
+  transition: color 350ms ease-in-out;
 }
 /* ----------------tag h1--------------------- */
 
@@ -180,6 +184,19 @@ body {
 .conditions_header > h1 {
   font-size: 20px;
   font-weight: 600;
+  position: relative;
+}
+.Products_header > h1::before,
+.learn_to_trade_header > h1::before,
+.About_us_header > h1::before,
+.conditions_header > h1::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  bottom: 0;
+  height: 1px;
+  left: 0;
+  border-bottom: 1px solid red;
 }
 
 /* ----------------footer--------------------- */
@@ -208,14 +225,98 @@ body {
 .learn_to_trade_links a:hover,
 .conditions_Links a:hover {
   text-decoration: underline;
-  color: aqua;
-  transition: ease-in-out 0.3s;
+  color: rgb(143, 143, 143);
+  padding-left: 5px;
 }
 
-.social_media_icon:hover{
+.social_media_icon:hover {
   color: rgb(253, 228, 117);
-  transition: ease-in 0.2s ;
 }
-.footer_parent{
+.footer_parent {
   margin-top: 100px;
+}
+/* ----------------active--------------------- */
+
+.Products_links.active {
+  display: block;
+  padding-left: 35px;
+}
+
+.learn_to_trade_links.active {
+  display: block;
+  padding-left: 35px;
+}
+.About_us_links.active {
+  display: block;
+  padding-left: 35px;
+}
+.conditions_Links.active {
+  display: block;
+  padding-left: 35px;
+}
+.upDown {
+  display: none;
+}
+.upDown.active {
+  transform: rotate(180deg);
+  transition: all 0.1s ease;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 1324px) {
+  .continer {
+    display: flex;
+  }
+  .Products h1{
+    color: aliceblue;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .continer {
+    display: block;
+  }
+  .Products_links,
+  .learn_to_trade_links,
+  .About_us_links,
+  .conditions_Links {
+    display: none;
+  }
+  .products_parent {
+    flex-direction: column;
+  }
+  .Products_header > h1::before,
+  .learn_to_trade_header > h1::before,
+  .About_us_header > h1::before,
+  .conditions_header > h1::before {
+    display: none;
+  }
+  .Products_header,
+  .learn_to_trade_header,
+  .conditions_header,
+  .About_us_header {
+    display: flex;
+  }
+  .Products,
+  .Learn_to_trade,
+  .about_us,
+  .conditions {
+    border: 2px solid rgb(130, 134, 130);
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+    margin-top: 10px;
+    background-color: rgba(46, 46, 46, 0.712);
+  }
+  .Products h1,
+  .learn_to_trade_header h1,
+  .About_us_header h1,
+  .conditions_header h1 {
+    cursor: pointer;
+  }
+  .upDown {
+    display: block;
+    margin-right: 10px;
+    align-self: center;
+    cursor: pointer;
+  }
 }
