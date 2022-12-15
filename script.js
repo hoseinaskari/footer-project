@@ -22,7 +22,7 @@ let upDown = document.querySelectorAll(".upDown")
 function upDownFunc(upDown, linksList, headerList) {
     linksList.classList.toggle("active");           // Links display
     upDown.classList.toggle("active");              // Arrow updown
-    if (linksList.classList.contains("active")) {   
+    if (linksList.classList.contains("active")) {
         headerList.style.color = "green";           // headers color
         headerList.style.transition = "all 0.3s";   // headers transitions
         upDown.style.transition = "all 0.1s";       // Arrow transitions
@@ -31,8 +31,6 @@ function upDownFunc(upDown, linksList, headerList) {
         headerList.style.color = "azure";
     }
 }
-
-
 /* ------------------- Products --------------------- */
 products.addEventListener("click", () => {
     upDownFunc(upDown[0], linksList[0], headerList[0]);
