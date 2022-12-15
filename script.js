@@ -50,3 +50,5 @@ about_us.addEventListener("click", () => {
 conditions.addEventListener("click", () => {
     upDownFunc(upDown[3], linksList[3], headerList[3]);
 })
+
+
